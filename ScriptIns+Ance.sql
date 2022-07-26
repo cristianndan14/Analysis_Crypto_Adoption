@@ -1,7 +1,6 @@
 USE cripto ;
 
 
-SELECT * FROM cripto.criptomoneda ;
 INSERT INTO criptomoneda ( id_criptomoneda , nombre , fecha_creacion )
 			VALUES		 ( 0 , 'BITCOIN' , '2009-01-03' ) ,
 						 ( 0 , 'ETHEREUM' , '2015-07-30' ) ,
@@ -11,7 +10,6 @@ INSERT INTO criptomoneda ( id_criptomoneda , nombre , fecha_creacion )
                          ;
                       
                       
-SELECT * FROM paises ;
 INSERT INTO paises ( id_pais , nombre , habitantes , cripto_legal )
 			VALUES ( 0 , 'ARGENTINA' , 47327407 , 0 ) ,
 				   ( 0 , 'ESTADOS UNIDOS' , 331449281 , 0 ) ,
@@ -21,7 +19,6 @@ INSERT INTO paises ( id_pais , nombre , habitantes , cripto_legal )
                    ;
 
 
-SELECT * FROM wallet ;
 INSERT INTO wallet ( id_wallet , nombre , fecha_creacion , id_pais )
 			VALUES ( 0 , 'BINANCE' , '2017-01-01' , 4 ) ,
 				   ( 0 , 'METAMASK' , '2016-01-01' , 2 ) ,
@@ -31,7 +28,6 @@ INSERT INTO wallet ( id_wallet , nombre , fecha_creacion , id_pais )
                    ;
                    
                    
-SELECT * FROM comercio_servicio ;
 INSERT INTO comercio_servicio ( id_comercio_servicio , nombre , rubro , descripcion , id_pais , id_criptomoneda , id_wallet )
 			VALUES ( 0 , 'Monks media' , 'Publicidad' , 'Agencia de diseño marketing' , 1 , 3 , 1 ) ,
 				   ( 0 , 'Gaming city' , 'Tecnologia' , 'Ventas de hardware' , 1 , 3 , 1 ) ,
@@ -42,7 +38,6 @@ INSERT INTO comercio_servicio ( id_comercio_servicio , nombre , rubro , descripc
                    ;
                    
                    
-SELECT * FROM usuarios ;
 INSERT INTO usuarios ( id_usuario , profesion , fecha_nacimiento , id_pais , id_criptomoneda , id_wallet )
 			VALUES ( 0 , 'Diseñador ux' , '1994-05-14' , 1 , 3 , 1 ) ,
 				   ( 0 , 'Developer' , '1999-02-11' , 1 , 4 , 5 ) ,
